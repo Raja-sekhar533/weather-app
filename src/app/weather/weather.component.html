@@ -15,6 +15,14 @@
     {{weather.weather[0].description}} </span></div>
 </div>
 <div class="col-sm-12 text-center text-bold text-uppercase" style=""> <span>{{weather.name}}, {{weather.sys.country}}</span></div>
+<div>
+<img src="https://openweathermap.org/img/wn/01d@2x.png" style="height:25px;">
+{{weather.sys.sunrise * 1000 | date: 'H:mm'}}
+</div>
+<div>
+<img src="https://openweathermap.org/img/wn/10d@2x.png" style="height:25px;">{{weather.sys.sunset * 1000 | date:'H:mm'}}
+</div>
+
 </div>
 
 <div class="row">
@@ -22,14 +30,6 @@
     <div class="col-sm-12 text-center">
 
 
-
-      <h4>current weather of your city</h4>
-<h2>weather in {{weather.name}}, {{weather.sys.country}}</h2>
-
-
-<h2>{{weather.weather[0].description}} </h2>
-<div class="container">
-<img src="https://openweathermap.org/img/wn/{{weather.weather[0].icon}}.png"></div>
     </div>
   </div>
 </div>
