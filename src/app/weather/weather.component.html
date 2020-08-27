@@ -1,22 +1,31 @@
+
+<div class="card"> 
+<div class="input-group ">
+  <input class="form-control" type="text" #userInput placeholder="enter city name...!">
+  <div class="input-group-append">
+    <button class="input-group-text  btn btn=outline-primary" (click)="getCity(userInput.value)">Search</button>
+  </div>
+  </div>
+  <div class="posit">
+  <div class="weatherIcon" style="fontSize:32px; margin:25px"> {{(weather.main.temp - 32)*5/9 | number: '1.0-0'  }}&#176;
+</div>
+<div class="weatherIcon" style="fontSize:32px; margin:5px"><img src="https://openweathermap.org/img/wn/{{weather.weather[0].icon}}.png"></div>
+</div>
+</div>
+
 <div class="row">
   <div class="col-md-6 offset-md-3">
     <div class="col-sm-12 text-center">
 
-<div class="input-group mt-5">
-  <input class="form-control" type="text" #userInput placeholder="enter city name...!">
-  <div class="input-group-attend">
-    <button class="input-group-text btn btn=outline-primary" (click)="getCity(userInput.value)">Search</button>
-  </div>
-  </div>
 
 
       <h4>current weather of your city</h4>
 <h2>weather in {{weather.name}}, {{weather.sys.country}}</h2>
 
-<h2> temp:{{(weather.main.temp - 32)*5/9 | number: '1.0-0'  }}&#176;C
-</h2>
+
 <h2>{{weather.weather[0].description}} </h2>
-<img src = "http://openweathermap.org/img/wn/{{weather.weather[0].icon}}.png" alt="old.png">
+<div class="container">
+<img src="https://openweathermap.org/img/wn/{{weather.weather[0].icon}}.png"></div>
     </div>
   </div>
 </div>

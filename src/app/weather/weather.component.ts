@@ -9,7 +9,7 @@ export class WeatherComponent implements OnInit {
 lat;
 lon;
 weather;
-temp_min = this.weather -32 * 5/9;
+temp_min ;
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit(): void {
@@ -24,6 +24,7 @@ getLocation(){
 
       this.weatherService.getWeatherDataByCordinates(this.lat, this.lon).subscribe(data => {
         this.weather = data;
+        
       })
     })
   }
