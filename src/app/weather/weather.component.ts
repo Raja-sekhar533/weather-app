@@ -9,7 +9,7 @@ export class WeatherComponent implements OnInit {
 lat;
 lon;
 weather;
-temp_min;
+temp_min = this.weather -32 * 5/9;
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit(): void {
