@@ -15,7 +15,8 @@
 
 <h2> temp:{{(weather.main.temp - 32)*5/9 | number: '1.0-0'  }}&#176;C
 </h2>
-<h2></h2>
+<h2>{{weather.weather[0].description}} </h2>
+<img src = "http://openweathermap.org/img/wn/{{weather.weather[0].icon}}.png" alt="old.png">
     </div>
   </div>
 </div>
