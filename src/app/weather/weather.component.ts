@@ -27,4 +27,9 @@ getLocation(){
     })
   }
 }
+getCity(city){
+this.weatherService.getWeatherDataByCityName(city).subscribe(data => {
+  this.weather = data;
+})
+}
 }

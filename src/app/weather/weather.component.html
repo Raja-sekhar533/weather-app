@@ -2,6 +2,14 @@
   <div class="col-md-6 offset-md-3">
     <div class="col-sm-12 text-center">
 
+<div class="input-group mt-5">
+  <input class="form-control" type="text" #userInput placeholder="enter city name...!">
+  <div class="input-group-attend">
+    <button class="input-group-text btn btn=outline-primary" (click)="getCity(userInput.value)">Search</button>
+  </div>
+  </div>
+
+
       <h4>current weather of your city</h4>
 <h2>weather in {{weather.name}}, {{weather.sys.country}}</h2>
 
