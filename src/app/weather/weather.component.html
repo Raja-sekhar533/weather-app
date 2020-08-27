@@ -13,7 +13,7 @@
       <h4>current weather of your city</h4>
 <h2>weather in {{weather.name}}, {{weather.sys.country}}</h2>
 
-<h2> temp:{{weather.main.temp }}
+<h2> temp:{{weather.main.temp | number: '1.0-0'}}&#176;F
 </h2>
 <h2>{{weather.main.temp_max}}</h2>
     </div>
