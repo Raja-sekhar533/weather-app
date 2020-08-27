@@ -19,4 +19,12 @@ getWeatherDataByCordinates(lat, lon){
 
 return this.http.get(this.url, { params });
 }
+getWeatherDataByCityName(city:string){
+let params = new HttpParams()
+.set('q', city)
+.set('units', 'imperial')
+.set('appid', this.apiKey)
+
+return this.http.get(this.url, {params});
+}
 }
