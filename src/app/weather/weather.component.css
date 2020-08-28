@@ -43,5 +43,6 @@ input,button{
   margin:10px;
 }
 .btnn{
-  
+  font-size: 1rem;
+  height: 20px;
 }
