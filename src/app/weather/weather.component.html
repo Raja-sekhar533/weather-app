@@ -7,9 +7,9 @@
     <button class="input-group-text  btn btn=outline-primary" (click)="getCity(userInput.value)">Search</button>
   </div>
   </div>
-  <div class="posit">
-  <div class="weatherIcon" ><span style="fontSize:32px; margin:25px"> {{(weather.main.temp - 32)*5/9 | number: '1.0-0'  }}&#176;</span><br>
-  <span style="fontSize:15px">{{date | date:'hh:mm'}} </span>
+  <div class="posit" style="marginTop:10px; marginLeft:15px">
+  <div class="weatherIcon" ><span style="fontSize:32px; "> {{(weather.main.temp - 32)*5/9 | number: '1.0-0'  }}&#176;</span><br>
+  <span style="fontSize:10px">{{date | date:'hh:mm'}},{{date | date: 'dd/mm/yy'}} </span>
 </div>
 <div class="col-sm-12">
   <span class="image col-6"><img style=" marginTop:5px; height:60px;" src="https://openweathermap.org/img/wn/{{weather.weather[0].icon}}.png"> </span>
