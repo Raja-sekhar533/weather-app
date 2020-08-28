@@ -11,8 +11,8 @@
   <div class="weatherIcon" ><span style="fontSize:32px; "> {{(weather.main.temp - 32)*5/9 | number: '1.0-0'  }}&#176;c</span><br>
   <span style="fontSize:10px">{{date | date:'hh:mm'}},{{date | date: 'dd/mm/yy'}} </span>
 </div>
-<div class="col-sm-12">
-  <span class="image col-6"><img style=" marginTop:5px; height:60px;" src="https://openweathermap.org/img/wn/{{weather.weather[0].icon}}.png"> </span>
+<div class="col-sm-12" style=" marginLeft:20px">
+  <span style=" marginTop:5px; height:60px;"><img src="https://openweathermap.org/img/wn/{{weather.weather[0].icon}}.png"> </span><br>
   <span class="description" style="fontSize:10px;marginTop:0px;">
     {{weather.weather[0].description}} </span></div>
 </div>
