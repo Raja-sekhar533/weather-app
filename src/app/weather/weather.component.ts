@@ -13,6 +13,7 @@ weather;
 temp_min ;
 isday ;
 date = new Date();
+search=true;
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit(): void {
@@ -40,5 +41,7 @@ this.weatherService.getWeatherDataByCityName(city).subscribe(data => {
 })
 
 }
-
+edit(){
+  this.search=false;
+}
 }

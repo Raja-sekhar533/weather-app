@@ -3,14 +3,16 @@
  <div class="col-md-4 col-sm-6 col-xs-12">
 <div class="card moon col-md-12"> 
 
-<div class="input-group">
+<div class="input-group" *ngIf="search">
   
   <input class="form-control " type="text" #userInput placeholder="enter city name...!" required>
   <div class="input-group-append">
     <button class="input-group-text  btn btn=outline-primary" (click)="getCity(userInput.value)">Search</button>
   </div>
   </div>
-  <div *ngif="userInput.invalid">please enter city</div>
+
+  <div *ngIf="!search">
+    <button class="btn btn-primary input-group-text" (click)="edit()">edit</button>
   <div class="posit" style="marginTop:10px; marginLeft:15px">
   <div class="weatherIcon" ><span style="fontSize:32px; "> {{(weather.main.temp - 32)*5/9 | number: '1.0-0'  }}&#176;c</span><br>
   <span style="fontSize:10px">{{date | date:'hh:mm'}},{{date | date: 'dd/mm/yy'}} </span>
@@ -42,6 +44,7 @@ deg: {{weather.wind.deg}}
   <span class="text-bold" style="fontSize:10px;">lan:{{weather.coord.lon}} <br>
    lat:{{weather.coord.lat}}</span>
   </div>
+</div>
 </div>
 </div>
 </div>
