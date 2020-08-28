@@ -1,6 +1,6 @@
 
-<div class="card"> 
-  <div [class.hidden]"weather.isDay" >
+<div [class.sun]="weather.isDay"  [class.moon]="!weather.isDay"class="card "> 
+ 
 <div class="input-group ">
   <input class="form-control" type="text" #userInput placeholder="enter city name...!">
   <div class="input-group-append">
@@ -24,14 +24,5 @@
 <img src="https://openweathermap.org/img/wn/10d@2x.png" style="height:25px;">{{weather.sys.sunset * 1000 | date:'H:mm'}}
 </div>
 {{weather.isDay}}
-</div>
 
-<div class="row">
-  <div class="col-md-6 offset-md-3">
-    <div class="col-sm-12 text-center">
-
-
-    </div>
-  </div>
-  </div>
 </div>
