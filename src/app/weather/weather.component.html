@@ -20,14 +20,14 @@
 </div>
 <div class="col-sm-12" style=" marginLeft:20px">
   <span style=" marginTop:5px; height:60px;"><img src="https://openweathermap.org/img/wn/{{weather.weather[0].icon}}.png"> </span><br>
-  <span class="description" style="fontSize:10px;marginTop:0px;">
+  <span class="description" style="fontSize:10px;">
     {{weather.weather[0].description}} </span></div>
 </div>
 <div class="col-sm-12 text-center text-bold text-uppercase" style=""> <span>{{weather.name}}, {{weather.sys.country}}</span></div>
 <div class="final">
   <div >
 <div>
-<img src="https://openweathermap.org/img/wn/01d@2x.png" style="height:20px;"><span style="fontSize:10px">
+<img src="https://openweathermap.org/img/wn/01d@2x.png" style="height:18px;"><span style="fontSize:10px">
 {{weather.sys.sunrise * 1000 | date: 'H:mm'}}</span>
 </div>
 <div>
