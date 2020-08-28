@@ -1,7 +1,7 @@
 <div class="container">
 <div class="row"> 
- 
-<div class="card moon col-md-3"> 
+ <div class="col-md-4">
+<div class="card moon col-md-12"> 
 
 <div class="input-group">
   <input class="form-control" type="text" #userInput placeholder="enter city name...!" required>
@@ -43,53 +43,9 @@ deg: {{weather.wind.deg}}
   </div>
 </div>
 </div>
-
-
-<div class="card moon col-md-3"> 
-
-<div class="input-group">
-  <input class="form-control" type="text" #userInput placeholder="enter city name...!" required>
-  <div class="input-group-append">
-    <button class="input-group-text  btn btn=outline-primary" (click)="getCity(userInput.value)">Search</button>
-  </div>
-  </div>
-  <div *ngif="userInput.invalid">please enter city</div>
-  <div class="posit" style="marginTop:10px; marginLeft:15px">
-  <div class="weatherIcon" ><span style="fontSize:32px; "> {{(weather.main.temp - 32)*5/9 | number: '1.0-0'  }}&#176;c</span><br>
-  <span style="fontSize:10px">{{date | date:'hh:mm'}},{{date | date: 'dd/mm/yy'}} </span>
 </div>
-<div class="col-sm-12" style=" marginLeft:20px">
-  <span style=" marginTop:5px; height:60px;"><img src="https://openweathermap.org/img/wn/{{weather.weather[0].icon}}.png"> </span><br>
-  <span class="description" style="fontSize:10px;marginTop:0px;">
-    {{weather.weather[0].description}} </span></div>
-</div>
-<div class="col-sm-12 text-center text-bold text-uppercase" style=""> <span>{{weather.name}}, {{weather.sys.country}}</span></div>
-<div class="final">
-  <div >
-<div>
-<img src="https://openweathermap.org/img/wn/01d@2x.png" style="height:25px;">
-{{weather.sys.sunrise * 1000 | date: 'H:mm'}}
-</div>
-<div>
-<img src="https://openweathermap.org/img/wn/10d@2x.png" style="height:25px;">{{weather.sys.sunset * 1000 | date:'H:mm'}}
-</div>
-
-</div>
-<div style="marginLeft:10px;">
-  <span style="fontSize:10px;">
-wind:{{weather.wind.speed}}m/s <br>
-deg: {{weather.wind.deg}}
-</span>
-</div>
-<div style="marginLeft:10px;">
-  <span class="text-bold" style="fontSize:10px;">lan:{{weather.coord.lon}} <br>
-   lat:{{weather.coord.lat}}</span>
-  </div>
-</div>
-</div>
-
-
-<div class="card moon col-md-3"> 
+<div class="col-md-4">
+<div class="card moon col-md-12"> 
 
 <div class="input-group">
   <input class="form-control" type="text" #userInput placeholder="enter city name...!" required>
@@ -131,7 +87,51 @@ deg: {{weather.wind.deg}}
   </div>
 </div>
 </div>
+</div>
+<div class="col-md-4">
+<div class="card moon col-md-12"> 
 
+<div class="input-group">
+  <input class="form-control" type="text" #userInput placeholder="enter city name...!" required>
+  <div class="input-group-append">
+    <button class="input-group-text  btn btn=outline-primary" (click)="getCity(userInput.value)">Search</button>
+  </div>
+  </div>
+  <div *ngif="userInput.invalid">please enter city</div>
+  <div class="posit" style="marginTop:10px; marginLeft:15px">
+  <div class="weatherIcon" ><span style="fontSize:32px; "> {{(weather.main.temp - 32)*5/9 | number: '1.0-0'  }}&#176;c</span><br>
+  <span style="fontSize:10px">{{date | date:'hh:mm'}},{{date | date: 'dd/mm/yy'}} </span>
+</div>
+<div class="col-sm-12" style=" marginLeft:20px">
+  <span style=" marginTop:5px; height:60px;"><img src="https://openweathermap.org/img/wn/{{weather.weather[0].icon}}.png"> </span><br>
+  <span class="description" style="fontSize:10px;marginTop:0px;">
+    {{weather.weather[0].description}} </span></div>
+</div>
+<div class="col-sm-12 text-center text-bold text-uppercase" style=""> <span>{{weather.name}}, {{weather.sys.country}}</span></div>
+<div class="final">
+  <div >
+<div>
+<img src="https://openweathermap.org/img/wn/01d@2x.png" style="height:25px;">
+{{weather.sys.sunrise * 1000 | date: 'H:mm'}}
+</div>
+<div>
+<img src="https://openweathermap.org/img/wn/10d@2x.png" style="height:25px;">{{weather.sys.sunset * 1000 | date:'H:mm'}}
+</div>
+
+</div>
+<div style="marginLeft:10px;">
+  <span style="fontSize:10px;">
+wind:{{weather.wind.speed}}m/s <br>
+deg: {{weather.wind.deg}}
+</span>
+</div>
+<div style="marginLeft:10px;">
+  <span class="text-bold" style="fontSize:10px;">lan:{{weather.coord.lon}} <br>
+   lat:{{weather.coord.lat}}</span>
+  </div>
+</div>
+</div>
+<div>
 </div></div>
 <div class="card moon col-md-3"> 
 
