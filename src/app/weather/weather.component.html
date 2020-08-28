@@ -17,6 +17,8 @@
     {{weather.weather[0].description}} </span></div>
 </div>
 <div class="col-sm-12 text-center text-bold text-uppercase" style=""> <span>{{weather.name}}, {{weather.sys.country}}</span></div>
+<div class="final">
+  <div >
 <div>
 <img src="https://openweathermap.org/img/wn/01d@2x.png" style="height:25px;">
 {{weather.sys.sunrise * 1000 | date: 'H:mm'}}
@@ -25,5 +27,10 @@
 <img src="https://openweathermap.org/img/wn/10d@2x.png" style="height:25px;">{{weather.sys.sunset * 1000 | date:'H:mm'}}
 </div>
 
-
+</div>
+<div>
+wind:{{weather.wind.speed}}m/s
+deg: {{weather.wind.deg}}
+</div>
+</div>
 </div>
