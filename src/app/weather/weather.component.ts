@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from '../weather.service';
 
-import { HostBinding} from '@angular/core';
 @Component({
   selector: 'app-weather',
   templateUrl: './weather.component.html',
