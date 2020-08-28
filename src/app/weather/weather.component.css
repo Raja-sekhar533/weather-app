@@ -4,7 +4,7 @@
     width: 200px;
     height: 220px;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 75%, rgb(8, 10, 63) 100%);
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 75%, rgb(8, 10, 63) 100%); */
     color: white;;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-shadow:0 15px 60px rgba(0,0,0,0.5)
@@ -25,5 +25,15 @@ input,button{
 }
 .posit{
   display:inline-flex;
+}
+.sun{
+    background-image: url('https://wallpaperaccess.com/full/526070.jpg');
+   background-size: cover;
+   background-position: center;
+}
+.moon{
+   background-image: url('https://wi.wallpapertip.com/wsimgs/10-102143_aesthetic-blue-moon-backgrounds.jpg');
+   background-size: cover;
+   background-position: center;
 }
 
