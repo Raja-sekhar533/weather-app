@@ -38,10 +38,11 @@ this.isday = (currentDate.getTime()< this.weather.sunsetTime.getTime());
 getCity(city){
 this.weatherService.getWeatherDataByCityName(city).subscribe(data => {
   this.weather = data;
-})
-
+}
+)
+this.search=false;
 }
 edit(){
-  this.search=false;
+  this.search=true;
 }
 }
